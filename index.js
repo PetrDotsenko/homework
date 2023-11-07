@@ -1,9 +1,9 @@
 let toClickOnStar = function () {
     const stars = Array.from(document.querySelectorAll('.star'));
     for (let i = 0; i < stars.length; i++) {
-        stars[i].onclick = function () => {
-            stars[i].classList.add('star_active');
-        }
+        stars[i].addEventListener('click', (event) => {
+            event.currentTarget.classList.add('star_active');
+        });
     }   
 }
 

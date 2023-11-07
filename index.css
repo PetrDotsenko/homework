@@ -9,6 +9,7 @@ body {
 
 .star-container {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: center;
 }
 
@@ -25,6 +26,11 @@ body {
 }
 
 .star_active {
+    fill: #ffca18;
+    scale: 1.2;
+}
+
+.star_active ~ .star {
     fill: #ffca18;
     scale: 1.2;
 }
